@@ -1,0 +1,16 @@
+name: "Storinka API";
+version: "1.0.0";
+
+CafeResult {
+  id: int64;
+  name: string;
+  description: strnig;
+  dishes: DishResult[];
+}
+
+DishResult {
+  id: int64;
+  name: string;
+}
+
+getCafe(id: int64): CafeResult;
