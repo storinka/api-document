@@ -37,6 +37,6 @@ section "Methods" {
 
 section "Types" {
   UserInput;
-  UserType;
+  UserResult;
 }
 ```
