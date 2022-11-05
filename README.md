@@ -58,3 +58,18 @@ UserResult : UserData {
 /// methods
 saveUser(id: int64, user: UserInput): UserResult;
 ```
+
+```javascript
+import api from 'api-document';
+
+const call = api`
+mode invoke {
+  url: "http://localhost/invoke";
+}
+
+dec2hex(dec: int64): string;
+`;
+
+const hex = await call('dec2hex', { dec: 99 });
+console.log(hex);
+```
