@@ -1,6 +1,6 @@
 # API Document
 
-API Driven Development (c)
+JSON-RPC 2.0 description language.
 
 ```
 /// details
@@ -9,12 +9,8 @@ summary: "Example API Document by Invoke";
 icon: "https://user-images.githubusercontent.com/21020331/145628046-ca19dbdf-2935-49fe-934c-a171219566cc.png";
 
 /// communication information
-mode invoke {
-  url: "http://localhost/invoke";
-}
-
 mode jsonRpc {
-  url: "http://localhost/json-rpc";
+  url: "http://localhost/call";
 }
 
 /// sections
