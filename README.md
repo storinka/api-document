@@ -35,16 +35,20 @@ section "Types" {
   UserResult;
 }
 
+enum Role: "basic" | "editor" | "admin";
+
 /// types
-UserInput {
+UserData {
   name: string;
   email: string;
+  role: Role;
 }
 
-UserResult {
+UserInput : UserData {
+}
+
+UserResult : UserData {
   id: int64;
-  name: string;
-  email: string;
 }
 
 /// methods
