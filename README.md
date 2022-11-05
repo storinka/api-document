@@ -15,15 +15,15 @@ execution http {
 
 /// sections
 section "Guide" {
-  markdown "Get Started" {
+  markdown "Get Started" `
     # Get Started
     ...
-  }
+  `
 
-  markdown "Rate limits" {
+  markdown "Rate limits" `
     # Rate limits
     ...
-  }
+  `
 }
 
 section "Methods" {
