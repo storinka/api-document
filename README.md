@@ -13,21 +13,6 @@ execution http {
   url: "http://localhost/invoke";
 }
 
-/// types
-type UserInput {
-  name: string;
-  email: string;
-}
-
-type UserResult {
-  id: int64;
-  name: string;
-  email: string;
-}
-
-/// methods
-saveUser(id: int64, user: UserInput): UserResult;
-
 /// sections
 section "Guide" {
   markdown "Get Started" {
@@ -49,4 +34,19 @@ section "Types" {
   UserInput;
   UserResult;
 }
+
+/// types
+UserInput {
+  name: string;
+  email: string;
+}
+
+UserResult {
+  id: int64;
+  name: string;
+  email: string;
+}
+
+/// methods
+saveUser(id: int64, user: UserInput): UserResult;
 ```
